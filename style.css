@@ -25,20 +25,29 @@ h1, h2 {
   font-size: 24px;
   font-weight: 900;
 }
+
 body {
   background-color:rgb(150, 199, 241);
   font-family: 'Libre Caslon Text', serif;
   color: rgba(165, 42, 42, 0.693);
-  font-size: ;
 }
 
 a {
   color: black;
-  text-decoration: ;
 }
 
-img {
-  border-radius: 60%;
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+#one {
+  width: 100%;
+  height:137%;
+  object-fit: cover;
 }
 
 .card-white {
@@ -50,7 +59,7 @@ img {
   box-shadow: 0px 10px 50px rgb(224, 128, 144);
 }
 
-a:hover {
+.btn-red:hover {
   background-color: yellowgreen;
   color: white
 }
@@ -62,6 +71,16 @@ a:hover {
 li {
   list-style: none;
   display: inline-block;
+  padding: 10px;
+  color: grey;
+}
+
+i {
+  color: grey;
+}
+i:hover {
+  color: black;
+  transition: 1s ease;
 }
 
 #social-media {
@@ -69,11 +88,114 @@ li {
   padding-inline-start: 20px;
 }
 
+#assim {
+  margin-bottom: 37px;
+}
 .btn-red {
   background-color: rgb(250, 250, 150);
   box-shadow: 5, 5, 10 black;
   border-radius: 15px;
   padding: 5px;
-  margin: 5px;
+
+  margin-top: 5px;
   text-decoration: none;
 }
+
+#introduction {
+  display: flex;
+}
+
+#left-container {
+  /* padding: auto; */
+  width: 75%;
+  border-right: solid 1px rgb(150, 199, 241);
+}
+
+#right-container {
+  margin-left:15px;
+}
+
+
+.grow:hover{
+/* -webkit-transform: scale(1.03); */
+/* -ms-transform: scale(1.03); */
+transform: scale(1.01);
+transition: 1s ease;
+}
+
+.small-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+#magnus {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+#run {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.card-product {
+  overflow: hidden;
+  text-align: left;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+#chess {
+  position:relative;
+}
+#running {
+  position:relative;
+}
+#fishing {
+  position:relative;
+}
+span {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+
+    z-index: 1;
+
+    /* fixes overlap error in IE7/8,
+       make sure you have an empty gif */
+    background-image: url('empty.gif');
+  }
